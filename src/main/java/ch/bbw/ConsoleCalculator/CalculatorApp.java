@@ -9,6 +9,16 @@ public class CalculatorApp {
 	public static void main(String[] args) {
 		Calculator calc = new Calculator();
 		
+		int val1 = 0;
+		int val2 = 0;
+		
+		System.out.println("Console Calculator");
+		System.out.println("==================");
+		System.out.println();
+		
+		val1 = 10;
+		val2 = 20;
+		System.out.println("Summe " + val1 + " + " + val2 + " = " + calc.summe(10, 20));
 		
 		
 	}
