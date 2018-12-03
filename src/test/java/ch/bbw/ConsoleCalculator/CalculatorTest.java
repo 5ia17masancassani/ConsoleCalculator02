@@ -2,17 +2,17 @@ package ch.bbw.ConsoleCalculator;
 
 import static org.junit.Assert.assertTrue;
 
+
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
+
 public class CalculatorTest {
-	/**
-	 * Rigorous Test :-)
-	 */
+	
+	Calculator testee;
+	
 	@Test
 	public void shouldAnswerWithTrue() {
-		assertTrue(true);
+		testee = new Calculator();
+		assertTrue(testee.summe(10, 25) == 35);
 	}
 }
