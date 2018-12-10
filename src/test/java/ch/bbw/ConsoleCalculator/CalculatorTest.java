@@ -46,9 +46,9 @@ public class CalculatorTest {
 		assertTrue(testee.division(25, 0) == 0);
 	}
 	
-	@Test
-	public void testDivisionDurchNullUnexpected() throws ArithmeticException {
-		
-		assertTrue(testee.division(25, 0) == 0);
-	}
+//	@Test
+//	public void testDivisionDurchNullUnexpected() throws ArithmeticException {
+//		
+//		assertTrue(testee.division(25, 0) == 0);
+//	}
 }
