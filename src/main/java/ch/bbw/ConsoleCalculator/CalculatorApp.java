@@ -19,6 +19,9 @@ public class CalculatorApp {
 		val1 = 10;
 		val2 = 20;
 		System.out.println("Summe " + val1 + " + " + val2 + " = " + calc.addition(10, 20));
+		System.out.println("Differenz " + val2 + " - " + val1 + " = " + calc.subtraktion(20, 10));
+		System.out.println("Produkt " + val1 + " * " + val2 + " = " + calc.multiplikation(10, 20));
+		System.out.println("Quotient " + val2 + " / " + val1 + " = " + calc.division(20, 10));
 		
 		
 	}
