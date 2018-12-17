@@ -123,6 +123,48 @@ public class CalculatorTest {
 		assertTrue(testee.multiplikation(4, 3) == 12);
 	}
 	
+	@Test
+	public void testMultiplikationZweiNegativIsOk() {
+
+		assertTrue(testee.multiplikation(-4, -3) == 12);
+	}
+	
+	@Test
+	public void testMultiplikationPositivNegativIsOk() {
+
+		assertTrue(testee.multiplikation(4, -3) == -12);
+	}
+	
+	@Test
+	public void testMultiplikationPositivNullIsOk() {
+
+		assertTrue(testee.multiplikation(4, 0) == 0);
+	}
+	
+	@Test
+	public void testMultiplikationNegativNullIsOk() {
+
+		assertTrue(testee.multiplikation(-4, 0) == 0);
+	}
+	
+	@Test
+	public void testMultiplikationMaxIsOk() {
+
+		assertTrue(testee.multiplikation(Integer.MAX_VALUE, 1) == Integer.MAX_VALUE);
+	}
+	
+	@Test
+	public void testMultiplikationMinIsOk() {
+
+		assertTrue(testee.multiplikation(Integer.MIN_VALUE, 1) == Integer.MIN_VALUE);
+	}
+	
+	@Test
+	public void testMultiplikationMaxMinIsOk() {
+
+		assertTrue(testee.multiplikation(Integer.MIN_VALUE, Integer.MAX_VALUE) == Integer.MIN_VALUE * Integer.MAX_VALUE);
+	}
+	
 	
 	
 	
