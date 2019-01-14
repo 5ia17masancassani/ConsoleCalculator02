@@ -12,7 +12,7 @@ public class CalculatorApp {
 		int val1 = 0;
 		int val2 = 0;
 
-		System.out.println("Console Calculator");
+		System.out.println("|Console Calculator|");
 		System.out.println("==================");
 		System.out.println();
 
